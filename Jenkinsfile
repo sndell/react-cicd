@@ -8,6 +8,12 @@ pipeline {
     }
 
     stage('Test') {
+      agent {
+        node {
+          label 'node run'
+        }
+
+      }
       steps {
         sh '''npm install
 npm run test'''

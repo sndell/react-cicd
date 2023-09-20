@@ -1,3 +1,13 @@
+import { Button } from './components/Button';
+
 export const App = () => {
-  return <div>App</div>;
+  const handleClick = () => {
+    console.log('clicked');
+  };
+
+  return (
+    <div className="grid h-dscreen place-content-center">
+      <Button label="Bra knapp" onClick={handleClick} />
+    </div>
+  );
 };

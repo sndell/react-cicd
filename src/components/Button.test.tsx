@@ -4,7 +4,7 @@ import { describe, expect, it, vi } from 'vitest';
 
 describe('Button', () => {
   it('Render the correct label', () => {
-    const { getByText } = render(<Button label="Click me" />);
+    const { getByText } = render(<Button label="Click me 420420" />);
     expect(getByText('Click me')).toBeInTheDocument();
   });
 

@@ -6,6 +6,12 @@ pipeline {
         git(url: 'https://github.com/sndell/react-cicd', branch: 'main')
       }
     }
+    stage('Test') {
+      steps {
+        sh 'npm install'
+        sh 'npm run test'
+      }
+    }
 
   }
 }

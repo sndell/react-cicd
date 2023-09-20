@@ -6,5 +6,6 @@ pipeline {
         git(url: 'https://github.com/sndell/react-cicd', branch: 'main')
       }
     }
+
   }
 }

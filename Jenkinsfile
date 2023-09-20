@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        sh '''npm install
+npm run test'''
+      }
+    }
+
   }
 }
